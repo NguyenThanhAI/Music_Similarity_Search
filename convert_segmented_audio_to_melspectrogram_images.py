@@ -80,7 +80,7 @@ if __name__ == '__main__':
         y, sr = read_audio_file(file, args.sr_desired)
         #print("y shape: {}".format(y.shape))
         num_segments = math.ceil(y.shape[0] / num_ts_per_segments)
-        print(num_segments)
+        #print(num_segments)
         #segments = np.split(y, num_segments)
         for i in range(num_segments):
             segment = y[i * num_ts_per_segments: (i + 1) * num_ts_per_segments]
