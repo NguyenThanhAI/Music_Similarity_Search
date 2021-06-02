@@ -84,7 +84,7 @@ if __name__ == '__main__':
         #segments = np.split(y, num_segments)
         for i in range(num_segments):
             segment = y[i * num_ts_per_segments: (i + 1) * num_ts_per_segments]
-            print("segment shape: {}".format(segment.shape))
+            #print("segment shape: {}".format(segment.shape))
 
             if segment.shape[0] < 250000:
                 continue
