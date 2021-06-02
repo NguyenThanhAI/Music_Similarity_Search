@@ -103,7 +103,7 @@ if __name__ == '__main__':
             img = np.flip(img, axis=0)
             img = 255 - img
 
-            print(img.shape)
+            #print(img.shape)
 
             relpath = os.path.relpath(file, args.audio_dir)
             save_dir = os.path.join(args.save_dir, os.path.dirname(relpath))
