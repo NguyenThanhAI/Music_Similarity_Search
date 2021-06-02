@@ -112,6 +112,6 @@ if __name__ == '__main__':
 
             cv2.imwrite(os.path.join(save_dir, os.path.splitext(os.path.basename(file))[0] + "_" + str(i) + ".jpg"), img)
 
-            index += 1
-            with open("index.txt", "w+") as f:
-                f.write(str(index))
+        index += 1
+        with open("index.txt", "w+") as f:
+            f.write(str(index))
